@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <title>Room homepage</title>
+
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+        <div class="header__logo">
+          <img src="./images/logo.svg" alt="Logo room">
+        </div>
+
+        <button type="button" class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+
+        <nav class="header__menu-desktop">
+          <ul class="header__items">
+            <li class="header__item"><a href="#">Home</a></li>
+            <li class="header__item"><a href="#">Shop</a></li>
+            <li class="header__item"><a href="#">About</a></li>  
+            <li class="header__item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="header__menu-mobile">
+          <ul class="header__items">
+            <li class="header__item"><a href="#">Home</a></li>
+            <li class="header__item"><a href="#">Shop</a></li>
+            <li class="header__item"><a href="#">About</a></li>  
+            <li class="header__item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="background"></div>
+
+    </header>
+
+    <main class="slideshow">
+     <div class="slideshow__content">
+        <div class="slideshow__img">
+          <picture>
+            <source media="(min-width: 500px)" srcset="./images/desktop-image-hero-1.jpg">
+            <img src="./images/mobile-image-hero-1.jpg" alt="Designer chair white">
+          </picture>
+        </div>
+
+        <div class="slideshow__info">
+          <h1 class="slideshow__title">Discover innovative ways to decorate</h1>
+  
+          <p class="slideshow__text">We provide unmatched quality, comfort, and style for property owners across the country. 
+            Our experts combine form and function in bringing your vision to life. Create a room in your 
+            own style with our collection and make your property a reflection of you and what you love.
+          </p>
+          
+            <button class="slideshow__btn">
+              <span>Shop Now</span>
+              <img src="./images/icon-arrow.svg" alt="">
+            </button>
+        </div>
+        <div class="slideshow__buttons">
+          <button class="slideshow__prev" onclick="plusDivs(-1)">
+            <img src="./images/icon-angle-left.svg">
+          </button>
+  
+          <button class="slideshow__next" onclick="plusDivs(+1)">
+            <img src="./images/icon-angle-right.svg">
+          </button>
+        </div>
+      </div>
+
+      <div class="slideshow__content">
+        <div class="slideshow__img">
+          <picture>
+            <source media="(min-width: 500px)" srcset="./images/desktop-image-hero-2.jpg">
+            <img src="./images/mobile-image-hero-2.jpg" alt="Designer chairs of various colors">
+          </picture>
+        </div>
+
+        <div class="slideshow__info">
+          <h1 class="slideshow__title">We are available all across the globe</h1>
+  
+          <p class="slideshow__text">With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+            Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+            store locator. Any questions? Don't hesitate to contact us today.
+          </p>
+  
+          <button class="slideshow__btn">
+            Shop Now
+            <img src="./images/icon-arrow.svg" alt="">
+          </button>
+        </div>
+        <div class="slideshow__buttons">
+          <button class="slideshow__prev" onclick="plusDivs(-1)">
+            <img src="./images/icon-angle-left.svg">
+          </button>
+  
+          <button class="slideshow__next" onclick="plusDivs(+1)">
+            <img src="./images/icon-angle-right.svg">
+          </button>
+        </div>
+      </div>
+
+      <div class="slideshow__content">
+        <div class="slideshow__img">
+          <picture>
+            <source media="(min-width: 500px)" srcset="./images/desktop-image-hero-3.jpg">
+            <img src="./images/mobile-image-hero-3.jpg" alt="Designer chairs black">
+          </picture>
+        </div>
+
+        <div class="slideshow__info">
+          <h1 class="slideshow__title">Manufactured with the best materials</h1>
+  
+          <p class="slideshow__text">Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+            experience in this industry, we understand what customers want for their home and office.
+          </p>
+  
+          <button class="slideshow__btn">
+            <span>Shop Now</span>
+            <img src="./images/icon-arrow.svg" alt="">
+          </button>
+        </div>
+        <div class="slideshow__buttons">
+          <button class="slideshow__prev" onclick="plusDivs(-1)">
+            <img src="./images/icon-angle-left.svg">
+          </button>
+  
+          <button class="slideshow__next" onclick="plusDivs(+1)">
+            <img src="./images/icon-angle-right.svg">
+          </button>
+        </div>
+      </div>
+
+    </main>
+
+    <articule class="about">
+      <div class="about__img">
+        <img src="./images/image-about-dark.jpg" alt="Furniture and table set">
+      </div>
+
+      <div class="about__info">
+        <h2 class="about__title">About our furniture</h2>
+
+        <p class="about__text">
+          Our multifunctional collection blends design and function to suit your individual taste.
+  Make each room unique, or pick a cohesive theme that best express your interests and what
+  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+  or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+
+      <div class="about__footer">
+        <img src="./images/image-about-light.jpg" alt="Modern designer white chair">
+      </div>
+    </articule>
+
+  </div>
+<script src="./js/index.js"></script>
+</body>
+</html>
