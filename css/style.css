@@ -19,6 +19,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 8rem auto 1fr;
+  overflow: hidden;
 }
 
 /* Header */
@@ -71,12 +72,10 @@ img {
 .header__menu-desktop {
   display: none;
 }
-
-.open {
+.header .open {
   height: 8rem;
 }
-
-.hamburger {
+.header .hamburger {
   background-color: transparent;
   border: none;
   outline: none;
@@ -84,7 +83,7 @@ img {
   order: 1;
   z-index: 5;
 }
-.hamburger .line {
+.header .hamburger .line {
   display: block;
   width: 25px;
   height: 3px;
@@ -93,28 +92,23 @@ img {
   border-radius: 4px;
   transition: transform 0.5s, opacity 0.25s;
 }
-
-.hamburger.active {
+.header .hamburger.active {
   position: fixed;
   top: 6.6%;
 }
-
-.hamburger.active .line:nth-child(1) {
+.header .hamburger.active .line:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
   background-color: #000;
 }
-
-.hamburger.active .line:nth-child(2) {
+.header .hamburger.active .line:nth-child(2) {
   opacity: 0;
   background-color: #000;
 }
-
-.hamburger.active .line:nth-child(3) {
+.header .hamburger.active .line:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
   background-color: #000;
 }
-
-.background {
+.header .background {
   visibility: hidden;
   position: fixed;
   z-index: 1;
@@ -124,7 +118,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.background__open {
+.header .background__open {
   visibility: visible;
   animation: background-open 0.5s;
 }
