@@ -42,7 +42,7 @@ img {
 .header__logo img {
   vertical-align: middle;
 }
-.header__menu-mobile {
+.header__menumobile {
   position: fixed;
   background-color: #fff;
   right: 0;
@@ -69,7 +69,7 @@ img {
   text-transform: lowercase;
   font-weight: 600;
 }
-.header__menu-desktop {
+.header__menudesktop {
   display: none;
 }
 .header .open {
@@ -281,7 +281,7 @@ img {
     transform: none;
     margin-left: 2rem;
   }
-  .header__menu-desktop {
+  .header__menudesktop {
     display: block;
     order: 2;
   }

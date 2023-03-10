@@ -43,7 +43,7 @@ img {
         }
     }
 
-    &__menu-mobile {
+    &__menumobile {
         position: fixed;
         background-color: #fff;
         right:0;
@@ -76,7 +76,7 @@ img {
         }
     }
 
-    &__menu-desktop {
+    &__menudesktop {
         display: none;
     }
     .open {
@@ -322,7 +322,7 @@ img {
            transform: none;
            margin-left: 2rem;
         }
-        &__menu-desktop {
+        &__menudesktop {
             display: block;
             order: 2;
         }  

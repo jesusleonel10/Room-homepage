@@ -1,5 +1,5 @@
 const hamburgerMenu = document.querySelector('.hamburger');
-const menuMobile = document.querySelector('.header__menu-mobile');
+const menuMobile = document.querySelector('.header__menumobile');
 const background = document.querySelector('.background')
 
 

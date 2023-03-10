@@ -23,7 +23,7 @@
           <span class="line"></span>
         </button>
 
-        <nav class="header__menu-desktop">
+        <nav class="header__menudesktop">
           <ul class="header__items">
             <li class="header__item"><a href="#">Home</a></li>
             <li class="header__item"><a href="#">Shop</a></li>
@@ -32,7 +32,7 @@
           </ul>
         </nav>
 
-        <nav class="header__menu-mobile">
+        <nav class="header__menumobile">
           <ul class="header__items">
             <li class="header__item"><a href="#">Home</a></li>
             <li class="header__item"><a href="#">Shop</a></li>
@@ -67,11 +67,11 @@
             </button>
         </div>
         <div class="slideshow__buttons">
-          <button class="slideshow__prev" onclick="plusDivs(-1)">
+          <button class="slideshow__prev" aria-label="Previous" onclick="plusDivs(-1)">
             <img src="./images/icon-angle-left.svg">
           </button>
   
-          <button class="slideshow__next" onclick="plusDivs(+1)">
+          <button class="slideshow__next" aria-label="Next" onclick="plusDivs(+1)">
             <img src="./images/icon-angle-right.svg">
           </button>
         </div>
@@ -100,11 +100,11 @@
         </div>
         <div class="slideshow__buttons">
           <button class="slideshow__prev" onclick="plusDivs(-1)">
-            <img src="./images/icon-angle-left.svg">
+            <img src="./images/icon-angle-left.svg" alt="">
           </button>
   
           <button class="slideshow__next" onclick="plusDivs(+1)">
-            <img src="./images/icon-angle-right.svg">
+            <img src="./images/icon-angle-right.svg" alt="">
           </button>
         </div>
       </div>
@@ -141,7 +141,7 @@
         </div>
       </div>
     </main>
-    <articule class="about">
+    <div role="contentinfo" class="about">
       <div class="about__img">
         <img src="./images/image-about-dark.jpg" alt="Furniture and table set">
       </div>
@@ -160,8 +160,7 @@
       <div class="about__footer">
         <img src="./images/image-about-light.jpg" alt="Modern designer white chair">
       </div>
-    </articule>
-
+    </div>
   </div>
 <script src="./js/index.js"></script>
 </body>
